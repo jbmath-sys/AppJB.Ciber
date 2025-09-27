@@ -1,0 +1,15 @@
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.db-shm
+*.db-wal
+*.DS_Store
+.vscode/
+.idea/
+*.log
+*.sqlite-journal
+packages/
+Releases/
+/docs/*.pdf
