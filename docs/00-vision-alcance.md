@@ -46,14 +46,14 @@ Su propósito es **reducir el tiempo de atención**, **minimizar errores de cobr
 
 ## 5. Resultados del Kickoff
 
-- **Fecha:** 13/10/2025  
+- **Fecha:** 10/10/2025  
 - **Duración:** 60–90 minutos  
-- **Participantes:** Equipo de desarrollo ADOO y representante del negocio (“Videojuegos El Profe 3.0”).  
+- **Participantes:** Equipo de desarrollo ADOO y representante del negocio "Yo" jeje... (“Videojuegos El Profe 3.0”).  
 - **Acuerdos principales:**
   1. Visión y objetivos validados por todos los participantes.  
   2. Se priorizan métricas SMART: tiempo de registro, errores de caja y adopción.  
   3. Se confirma el alcance del MVP (sesiones, ventas rápidas, cierre de caja).  
-  4. Se crean los artefactos base: proyecto en **Overleaf** y **repositorio Git**.  
+  4. Se crean los artefactos base: proyecto en **Overleaf** y **repositorio en Github**.  
   5. Próximo paso: documentar **casos de uso iniciales** (día 2).
 
 ---
