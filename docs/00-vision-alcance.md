@@ -21,6 +21,7 @@ La solución a este problema permitirá **mejorar la organización, reducir erro
 
 A partir de esta problemática, se plantea la creación del sistema **“Videojuegos El Profe 3.0”**, cuyo propósito es ofrecer una plataforma digital que centralice todas las operaciones del negocio.  
 La siguiente sección presenta la **visión general del sistema**, así como las **métricas de éxito (SMART)** que permitirán evaluar el cumplimiento de sus objetivos.
+
 ---
 
 ## Visión del sistema
