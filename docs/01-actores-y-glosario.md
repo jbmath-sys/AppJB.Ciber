@@ -25,6 +25,8 @@ A continuación, se presenta una tabla resumen de los actores que intervienen en
 El glosario define los conceptos fundamentales del dominio de negocio que se usarán durante el análisis y diseño del sistema.  
 Estos términos garantizan un lenguaje común entre los miembros del equipo y los interesados.
 
+A continuación se enlistan cada uno de los terminos con su definición clara y precisas, los cuales son:
+
 | Término | Definición |
 |----------|------------|
 | **Sesión** | Periodo de tiempo en el que un cliente utiliza una PC o consola. Se inicia al registrar el tiempo y finaliza al concluir el servicio o agotarse el saldo. |
