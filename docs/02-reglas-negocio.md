@@ -1,4 +1,4 @@
-### Reglas de Negocio v0
+### Reglas de Negocio 
 
 Después de identificar los actores y definir los conceptos clave del sistema, es necesario establecer un conjunto de reglas que guíen su comportamiento.  
 Las **reglas de negocio** representan las políticas, restricciones y condiciones que deben cumplirse para garantizar la correcta operación del sistema de gestión del ciber.  
