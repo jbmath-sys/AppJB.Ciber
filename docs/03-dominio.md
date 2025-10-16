@@ -38,11 +38,10 @@ Esta descripción complementa la tabla anterior y servirá como referencia para 
 - **LineaVenta:** `id:string`, `ventaId:string`, `tipoItem:string` (*Sesion* | *Producto*), `referenciaId:string`, `cantidad:int`, `precioUnitario:decimal`  
 - **Ticket:** `id:string`, `ventaId:string`, `folio:string`, `emitidoEn:datetime`  
 
-Una vez definidas las clases candidatas y sus atributos mínimos, se representa gráficamente su estructura mediante un **diagrama de clases**.  
-Este diagrama permite visualizar cómo se relacionan las entidades del negocio entre sí y facilita la comprensión de la información que manejará el sistema.
-
-
 ---
 
 ## 3.2 Diagrama de clases v0 (PlantUML)
+
+Una vez definidas las clases candidatas y sus atributos mínimos, se representa gráficamente su estructura mediante un **diagrama de clases**.  
+Este diagrama permite visualizar cómo se relacionan las entidades del negocio entre sí y facilita la comprensión de la información que manejará el sistema.
 
