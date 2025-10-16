@@ -1,4 +1,4 @@
-# 03. Dominio v0 
+# 03. Dominio
 
 Después de identificar los actores, el glosario de términos y las reglas de negocio, el siguiente paso consiste en modelar el **dominio del sistema**, es decir, representar las **entidades principales** que forman parte del negocio y las **relaciones** entre ellas.  
 Este modelo conceptual servirá como base para construir los casos de uso y los diagramas de secuencia en las próximas iteraciones.
@@ -8,6 +8,9 @@ En esta sección se propone un primer **modelo del dominio (v0)** con las **enti
 ---
 
 ## 3.1 Clases candidatas y atributos mínimos
+
+Para comprender mejor la estructura del negocio, se identifican las **clases candidatas** que representan los principales conceptos del dominio.  
+Cada clase incluye un conjunto mínimo de **atributos esenciales** que describen su información básica y permiten modelar las relaciones más relevantes entre las entidades.
 
 > Nota: Solo entidades del **negocio** (sin UI ni infraestructura). Tipos sugeridos: `string`, `int`, `decimal`, `datetime`, `bool`.
 
