@@ -24,6 +24,7 @@ Cada clase incluye un conjunto mínimo de **atributos esenciales** que describen
 | **Venta** | Transacción de cobro (tiempo y/o productos). | `id`, `fecha: datetime`, `clienteId?`, `usuarioId`, `subtotal (calc)`, `iva (calc)`, `total (calc)` | Tiene **1..*** Líneas de Venta y 0..1 Ticket |
 | **LineaVenta** | Ítem con cantidad y precio. | `id`, `ventaId`, `tipoItem: {Sesion, Producto}`, `referenciaId`, `cantidad: int`, `precioUnitario: decimal`, `importe (calc)` | Pertenece a 1 Venta |
 | **Ticket** | Comprobante de la Venta. | `id`, `ventaId (único)`, `folio`, `emitidoEn: datetime` | 1–1 con Venta |
+| **Promocion** | Regla comercial temporal. | `id`, `nombre`, `descripcion`, `tipo: {Porcentaje, Fijo}`, `valor: decimal`, `inicio: datetime`, `fin: datetime`, `activa: bool` | Puede afectar Sesiones/Productos (aplicación en lógica) |
 
 A continuación, se detallan los **atributos mínimos** de cada clase, especificando su tipo de dato y propósito dentro del modelo.  
 Esta descripción complementa la tabla anterior y servirá como referencia para el diseño lógico y la futura implementación en código.
@@ -37,7 +38,8 @@ Esta descripción complementa la tabla anterior y servirá como referencia para 
 - **Venta:** `id:string`, `fecha:datetime`, `clienteId?:string`, `usuarioId:string`  
 - **LineaVenta:** `id:string`, `ventaId:string`, `tipoItem:string` (*Sesion* | *Producto*), `referenciaId:string`, `cantidad:int`, `precioUnitario:decimal`  
 - **Ticket:** `id:string`, `ventaId:string`, `folio:string`, `emitidoEn:datetime`  
-
+- **Promocion:** `id:string`, `nombre:string`, `descripcion:string`, `tipo:string` (*Porcentaje* | *Fijo*), `valor:decimal`, `inicio:datetime`, `fin:datetime`, `activa:bool`
+  
 ---
 
 ## 3.2 Diagrama de clases v0 (PlantUML)
