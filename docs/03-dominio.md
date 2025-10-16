@@ -25,6 +25,8 @@ Cada clase incluye un conjunto mínimo de **atributos esenciales** que describen
 | **LineaVenta** | Ítem con cantidad y precio. | `id`, `ventaId`, `tipoItem: {Sesion, Producto}`, `referenciaId`, `cantidad: int`, `precioUnitario: decimal`, `importe (calc)` | Pertenece a 1 Venta |
 | **Ticket** | Comprobante de la Venta. | `id`, `ventaId (único)`, `folio`, `emitidoEn: datetime` | 1–1 con Venta |
 
+A continuación, se detallan los **atributos mínimos** de cada clase, especificando su tipo de dato y propósito dentro del modelo.  
+Esta descripción complementa la tabla anterior y servirá como referencia para el diseño lógico y la futura implementación en código.
 
 **Atributos mínimos detallados**  
 - **Cliente:** `id:string`, `nombre:string`, `telefono?:string`, `esFrecuente:bool`  
