@@ -1,5 +1,8 @@
 # 03. Dominio v0 
 
+Después de identificar los actores, el glosario de términos y las reglas de negocio, el siguiente paso consiste en modelar el **dominio del sistema**, es decir, representar las **entidades principales** que forman parte del negocio y las **relaciones** entre ellas.  
+Este modelo conceptual servirá como base para construir los casos de uso y los diagramas de secuencia en las próximas iteraciones.
+
 En esta sección se propone un primer **modelo del dominio (v0)** con las **entidades del negocio** para “Videojuegos El Profe 3.0”. Se incluyen **clases candidatas con atributos mínimos**, un **diagrama de clases** y un listado de **supuestos y restricciones** que guían el alcance técnico inicial.
 
 ---
@@ -29,6 +32,9 @@ En esta sección se propone un primer **modelo del dominio (v0)** con las **enti
 - **Venta:** `id:string`, `fecha:datetime`, `clienteId?:string`, `usuarioId:string`  
 - **LineaVenta:** `id:string`, `ventaId:string`, `tipoItem:string` (*Sesion* | *Producto*), `referenciaId:string`, `cantidad:int`, `precioUnitario:decimal`  
 - **Ticket:** `id:string`, `ventaId:string`, `folio:string`, `emitidoEn:datetime`  
+
+Una vez definidas las clases candidatas y sus atributos mínimos, se representa gráficamente su estructura mediante un **diagrama de clases**.  
+Este diagrama permite visualizar cómo se relacionan las entidades del negocio entre sí y facilita la comprensión de la información que manejará el sistema.
 
 
 ---
