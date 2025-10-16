@@ -42,7 +42,7 @@ Esta descripción complementa la tabla anterior y servirá como referencia para 
   
 ---
 
-## 3.2 Diagrama de clases v0 (PlantUML)
+## 3.2 Diagrama de clases (PlantUML)
 
 Una vez definidas las clases candidatas y sus atributos mínimos, se representa gráficamente su estructura mediante un **diagrama de clases**.  
 Este diagrama permite visualizar cómo se relacionan las entidades del negocio entre sí y facilita la comprensión de la información que manejará el sistema.
