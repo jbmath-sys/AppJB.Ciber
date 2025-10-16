@@ -51,4 +51,3 @@ Las historias se ordenan según el **valor que aportan al negocio** y el **riesg
 ---
 
 Con este backlog inicial se establecen las bases funcionales del proyecto, priorizando las historias que entregan **mayor valor comercial** en menor tiempo.  
-Durante la siguiente jornada (viernes 17/10), se elaborará la **matriz de riesgos**, se definirán las **convenciones de trabajo** y se realizará la **revisión final de la Iteración 0**, asegurando que todo el material esté correctamente documentado y subido al repositorio.
