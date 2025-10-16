@@ -42,7 +42,7 @@ Esta descripción complementa la tabla anterior y servirá como referencia para 
   
 ---
 
-## 3.2 Diagrama de clases (PlantUML)
+## 3.2 Diagrama de clases
 
 Una vez definidas las clases candidatas y sus atributos mínimos, se representa gráficamente su estructura mediante un **diagrama de clases**.  
 Este diagrama permite visualizar cómo se relacionan las entidades del negocio entre sí y facilita la comprensión de la información que manejará el sistema.
@@ -51,4 +51,35 @@ Nuestro diagrama es:
 
 ![Diagrama de clases](../imagenes/Diagrama_de_Clases.png)
 
+---
+
+## 3.3 Supuestos y restricciones
+
+Después de representar el modelo de clases del dominio, es importante documentar los **supuestos** que se tomaron durante su elaboración y las **restricciones técnicas u operativas** que podrían afectar el funcionamiento del sistema.  
+Estos elementos ayudan a mantener la coherencia entre el modelo conceptual y las condiciones reales del entorno donde será implementado el sistema “Videojuegos El Profe 3.0”.
+
+---
+
+### Supuestos de negocio
+
+1. Un **Invitado** se maneja como `Cliente` sin teléfono y con `esFrecuente = false`.  
+2. Una **Venta** puede incluir **tiempo de juego (Sesión)** y **productos** en el mismo ticket.  
+3. La **tarifa por hora** depende del tipo de **Estación** (PC/Consola) y se calcula de forma proporcional al tiempo consumido.  
+4. Las **Promociones** se aplican **antes del IVA** y pueden ser por **porcentaje** o **monto fijo**.  
+5. El **Ticket** tiene relación **1 a 1** con la **Venta** y se genera al momento del cobro.  
+
+---
+
+### Restricciones técnicas / operativas
+
+1. La **impresora de tickets** debe estar disponible localmente; si falla, el sistema podrá emitir un **ticket digital** (PDF o imagen).  
+2. **NAT / Red Xbox:** para consolas, se asume una configuración de **NAT abierto**; en caso de **NAT estricto**, algunas funciones en línea podrían no estar disponibles.  
+3. El **inventario** de productos se descuenta automáticamente en cada **Línea de Venta** de tipo *Producto*.  
+4. Las **integraciones externas** (pagos en línea, sistemas de lealtad, etc.) quedan fuera del alcance del **v0**.  
+5. El cálculo de **minutosConsumidos** y **monto** en la **Sesión** se realiza al cerrarla (o en tiempo real, sin guardar cada actualización).  
+
+---
+
+Con estos supuestos y restricciones se establecen los límites operativos del modelo de dominio.  
+Esta información será clave para definir las **épicas e historias de usuario** que compondrán el **backlog inicial** en la siguiente jornada de trabajo.
 
