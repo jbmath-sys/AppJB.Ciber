@@ -45,6 +45,8 @@ Esta descripción complementa la tabla anterior y servirá como referencia para 
 Una vez definidas las clases candidatas y sus atributos mínimos, se representa gráficamente su estructura mediante un **diagrama de clases**.  
 Este diagrama permite visualizar cómo se relacionan las entidades del negocio entre sí y facilita la comprensión de la información que manejará el sistema.
 
+Nuestro diagrama es:
+
 ![Diagrama de clases](../imagenes/Diagrama_de_Clases.png)
 
 
