@@ -5,7 +5,7 @@
 
 **Objetivo:** Definir visión, alcance, actores, reglas de negocio y riesgos iniciales.
 
-## Contenido
+## Entregables
 - [00 Visión y alcance](00-vision-alcance.md)
 - [01 Actores y glosario](01-actores-y-glosario.md)
 - [02 Reglas de negocio](02-reglas-negocio.md)
