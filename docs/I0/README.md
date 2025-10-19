@@ -1,4 +1,5 @@
 # Iteración 0 — Incepción
+**Rama:** `iter/I0-incepcion` 
 **Fechas:** 1–15 octubre 2025  
 **Objetivo:** Definir visión, alcance, actores, reglas de negocio y riesgos iniciales.
 
