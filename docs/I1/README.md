@@ -1,6 +1,7 @@
 # Iteración 1 — Núcleo Cliente + Sesiones
 **Rama:** `iter/I1-Cliente+Sesiones`  
-**Alcance:** Registrar Cliente, Iniciar/Pausar/Reanudar/Cerrar Sesión y Cobrar.
+**Fechas:** 20 octubre al 02 de noviembre 2025
+**Objetivo:** Registrar Cliente, Iniciar/Pausar/Reanudar/Cerrar Sesión y Cobrar.
 
 ## Entregables
 - [Casos de uso](./casos-uso/)
