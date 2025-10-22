@@ -14,7 +14,7 @@ Registrar el **pago** del consumo (tiempo de juego y/o productos), aceptando **u
 ---
 
 ## 2. Descripción breve
-Tras cerrar la sesión (CU-04) y tener el **total calculado**, el cajero selecciona el ticket **Pendiente de pago**, elige método(s) de pago (efectivo, tarjeta, mixto, etc.), confirma el cobro, genera el comprobante e imprime (o emite digital). El sistema marca el ticket como **Pagado** y registra movimientos en caja.
+Tras cerrar la sesión (CU-04) y tener el **total calculado**, el cajero selecciona el ticket **Pendiente de pago**, elige método de pago en efectivo, confirma el cobro, genera el comprobante e imprime (o emite digital). El sistema marca el ticket como **Pagado** y registra movimientos en caja.
 
 ---
 
@@ -33,7 +33,7 @@ Tras cerrar la sesión (CU-04) y tener el **total calculado**, el cajero selecci
 |------|------------------|-------------|
 | 1 | Actor | Abre **Caja → Cobrar** y selecciona el ticket `Pendiente`. |
 | 2 | Sistema | Muestra el **desglose**: líneas (tiempo y/o productos), subtotal, descuentos, IVA y total. |
-| 3 | Actor | Selecciona método de pago: **Efectivo / Tarjeta / Mixto / Transferencia / QR**. |
+| 3 | Actor | Selecciona método de pago: **Efectivo**. |
 | 4 | Actor | Ingresa monto(s) recibido(s). |
 | 5 | Sistema | Valida que la suma de montos sea **≥ Total**; calcula **cambio** si aplica. |
 | 6 | Actor | Confirma **Cobrar**. |
