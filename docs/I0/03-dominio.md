@@ -50,7 +50,7 @@ Este diagrama permite visualizar cómo se relacionan las entidades del negocio e
 Nuestro diagrama es:
 
 <p align="center">
-  <img src="../imagenes/Diagrama_de_Clases.png" width="600">
+  <img src="../../imagenes/Diagrama_de_Clases.png" alt="Diagrama de clases" width="700">
 </p>
 
 
