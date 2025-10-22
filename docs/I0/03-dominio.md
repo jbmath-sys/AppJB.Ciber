@@ -49,7 +49,7 @@ Este diagrama permite visualizar cómo se relacionan las entidades del negocio e
 
 Nuestro diagrama es:
 
-![Diagrama de clases](../imagenes/Diagrama_de_Clases.png)
+![Diagrama de clases](../imagenes/i0/Diagrama_de_Clases.png)
 
 ---
 
