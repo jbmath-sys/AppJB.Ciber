@@ -49,7 +49,8 @@ Esta sesión servirá para calcular el tiempo consumido, aplicar promociones y g
 | **A1** | **Estación ocupada:** Si la estación no está disponible, el sistema muestra mensaje *“Estación en uso”* y cancela la operación. |
 | **A2** | **Cliente con sesión activa:** Si el cliente ya tiene una sesión abierta, muestra *“Cliente ya en sesión”* y ofrece opción para reanudar o cerrar la anterior. |
 | **A3** | **Invitado:** Si el cliente no está registrado, el cajero puede crear un *Cliente tipo Invitado* (ver CU-01-A4). |
-| **A4** | **Error de conexión:** Si ocurre un fallo al guardar, muestra *“No se pudo iniciar la sesión”* y no cambia el estado de la estación. |
+| **A4** | **Cliente Nuevo:** Si el cliente no está registrado, el cajero puede registrar un *Cliente nuevo* (ver CU-01). |
+| **A5** | **Error de conexión:** Si ocurre un fallo al guardar, muestra *“No se pudo iniciar la sesión”* y no cambia el estado de la estación. |
 
 ---
 
