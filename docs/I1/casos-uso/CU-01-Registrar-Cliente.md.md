@@ -98,6 +98,6 @@ Si la validación es correcta, guarda los datos en la base y confirma el registr
 
 ---
 
-**Autor:** Profe JB — *Sistema de Gestión de Ciber (AppJB.Ciber)*  
+**Autor:** Lic. en Matematicas Juan Bernardo Lopez Acosta — *Sistema de Gestión de Ciber (AppJB.Ciber)*  
 **Fecha de redacción:** 18/oct/2025  
 **Versión:** v1.0  
