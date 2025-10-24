@@ -1,0 +1,30 @@
+@startuml
+title Actividad: Iniciar Sesión de Juego
+
+|Cajero|
+start
+:Abrir "Iniciar Sesión";
+:Elegir Cliente y Estación;
+
+|Sistema|
+:Verificar disponibilidad de Estación;
+if (¿Estación disponible?) then (Sí)
+  :Verificar que Cliente no tenga sesión activa;
+  if (¿Cliente activo?) then (Sí)
+    :Mensaje "Cliente ya en sesión"; 
+    stop
+  else (No)
+    |DB|
+    :Crear Sesión {Inicio=Now, Estado=EnCurso};
+    |Sistema|
+    :Marcar Estación=Ocupada;
+    :Mostrar vista "Sesión en curso" (cronómetro);
+    |Cajero|
+    :Confirmar inicio visualmente;
+    stop
+  endif
+else (No)
+  :Mensaje "Estación en uso";
+  stop
+endif
+@enduml
