@@ -1,0 +1,64 @@
+@startuml
+title Actividad: Iniciar Sesión (Administrador / Cajero)
+
+|Usuario|
+start
+:Abrir pantalla "Iniciar Sesión";
+:Ingresar Usuario y Contraseña;
+
+|Sistema|
+:Validar formato de datos;
+
+if (¿Campos vacíos?) then (Sí)
+  :Mostrar "Complete todos los campos";
+  stop
+else (No)
+  |AuthService|
+  :Buscar usuario en base de datos;
+  |DB|
+  :SELECT * FROM Usuario WHERE username = input;
+  |AuthService|
+  if (¿Usuario existe?) then (Sí)
+    if (¿Usuario activo y no bloqueado?) then (Sí)
+      :Comparar hash de contraseña;
+      if (¿Contraseña correcta?) then (Sí)
+        if (¿Requiere 2FA?) then (Sí)
+          :Validar código 2FA;
+          if (¿Código válido?) then (Sí)
+            :Autenticación exitosa;
+          else (No)
+            :Mostrar "Código 2FA inválido";
+            stop
+          endif
+        else (No)
+          :Autenticación exitosa;
+        endif
+        :Crear SesiónApp (usuarioId, rol, expira);
+        :Registrar login en bitácora;
+        if (¿Rol=Administrador?) then (Sí)
+          :Redirigir a Panel Administrador;
+        else (No)
+          :Redirigir a Módulo de Caja;
+        endif
+      else (No)
+        :Incrementar contador de intentos fallidos;
+        if (¿Intentos > 3?) then (Sí)
+          :Bloquear usuario temporalmente;
+        endif
+        :Mostrar "Usuario o contraseña incorrectos";
+        stop
+      endif
+    else (No)
+      :Mostrar "Usuario inactivo o bloqueado";
+      stop
+    endif
+  else (No)
+    :Mostrar "Usuario no encontrado";
+    stop
+  endif
+endif
+
+|Usuario|
+:Accede al sistema según su rol;
+stop
+@enduml
