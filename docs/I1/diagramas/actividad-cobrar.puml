@@ -1,0 +1,31 @@
+@startuml
+title Actividad: Cobrar
+
+|Cajero|
+start
+:Abrir "Cobrar" y elegir Ticket Pendiente;
+|Sistema|
+:Mostrar desglose (líneas, subtotal, desc, IVA, total);
+
+|Cajero|
+:Elegir método(s) de pago\n(Efectivo/Tarjeta/Mixto/Transfer);
+:Ingresar monto(s);
+
+|Sistema|
+if (¿Suma montos >= Total?) then (Sí)
+  :Calcular cambio (si aplica);
+  :Confirmación final;
+  if (¿Confirmado?) then (Sí)
+    |DB|
+    :Registrar Pago(s);\nMarcar Ticket=Pagado;\nCrear MovimientoCaja;
+    |Sistema|
+    :Generar Folio y Ticket (impresión o digital);
+    :Mensaje "Pago registrado";
+  else (No)
+    :Cancelar cobro (Ticket sigue Pendiente);
+  endif
+else (No)
+  :Mensaje "Monto insuficiente";
+endif
+stop
+@enduml
