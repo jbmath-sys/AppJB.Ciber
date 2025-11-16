@@ -14,8 +14,6 @@ CU-VEN-02 – Imprimir ticket
 
 CU-INV-03 – Actualizar inventario
 
-Resumen de casos de uso
-
 🔹 Diagramas de actividad y secuencia
 
 Actividad
