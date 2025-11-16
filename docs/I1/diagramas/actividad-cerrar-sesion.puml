@@ -1,0 +1,30 @@
+@startuml
+title Actividad: Cerrar Sesión
+
+|Cajero|
+start
+:Seleccionar "Cerrar Sesión";
+
+|Sistema|
+:Confirmar acción;
+if (¿Confirmado?) then (Sí)
+  :HoraFin = Now();
+  :Calcular TiempoTotal (suma de tramos);
+  if (¿TiempoTotal > 0?) then (Sí)
+    :Obtener Tarifa por Tipo Estación;
+    :Aplicar Promociones (antes de IVA);
+    :Calcular Subtotal, Descuento, IVA, Total;
+    |DB|
+    :Actualizar Sesión (Finalizada);
+    :Crear Ticket + LineaVenta;
+    |Sistema|
+    :Estación = Disponible;
+    :Mostrar desglose y opción Cobrar/Imprimir;
+  else (No)
+    :Mensaje "Sin consumo";
+  endif
+else (No)
+  :Cancelar operación;
+endif
+stop
+@enduml

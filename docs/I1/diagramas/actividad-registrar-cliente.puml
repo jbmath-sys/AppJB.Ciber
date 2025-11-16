@@ -1,0 +1,43 @@
+@startuml
+title Actividad: Registrar Cliente
+
+|Cajero|
+start
+:Abrir "Registrar Cliente";
+:Capturar datos (Nombre, Tel, Correo, Foto opcional);
+
+|Sistema|
+:Validar campos obligatorios;
+
+if (¿Nombre vacío?) then (Sí)
+  :Mostrar "Complete los campos requeridos";
+  stop
+else (No)
+  if (¿Teléfono capturado?) then (Sí)
+    |DB|
+    :Buscar Teléfono duplicado;
+    |Sistema|
+    if (¿Existe teléfono?) then (Sí)
+      :Mostrar "Cliente existente" y sugerir buscar;
+      stop
+    else (No)
+      |DB|
+      :Insertar Cliente;
+    endif
+  else (No)
+    |Sistema|
+    :Marcar tipo = Invitado;\nEsFrecuente = false;
+    |DB|
+    :Insertar Cliente (mínimo);
+  endif
+endif
+
+|Sistema|
+:Generar IdCliente y FechaRegistro;
+:Mostrar "Cliente registrado correctamente";
+
+|Cajero|
+:Continuar (iniciar sesión o nuevo registro);
+stop
+@enduml
+

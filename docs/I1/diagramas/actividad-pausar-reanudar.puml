@@ -1,0 +1,35 @@
+@startuml
+title Actividad: Pausar / Reanudar Sesión
+
+|Cajero|
+start
+:Seleccionar Sesión;
+
+|Sistema|
+if (¿Acción = Pausar?) then (Pausar)
+  if (¿Sesión EnCurso?) then (Sí)
+    :HoraPausa = Now();
+    :Sumar tramo a MinutosAcumulados;
+    :EstadoSesion = Pausada;
+    :Estación = Disponible;
+    :Mensaje "Sesión pausada";
+  else (No)
+    :Mensaje "Sesión no activa";
+  endif
+else (Reanudar)
+  if (¿Sesión Pausada?) then (Sí)
+    if (¿Estación disponible?) then (Sí)
+      :HoraReanudacion = Now();
+      :EstadoSesion = EnCurso;
+      :Estación = Ocupada;
+      :Mostrar "Sesión en curso";
+    else (No)
+      :Mensaje "Estación actualmente en uso";
+    endif
+  else (No)
+    :Mensaje "No se puede reanudar (estado inválido)";
+  endif
+endif
+
+stop
+@enduml
