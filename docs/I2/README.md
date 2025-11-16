@@ -12,7 +12,7 @@ CU-VEN-01 – Vender producto
 
 CU-VEN-02 – Imprimir ticket
 
-CU-INV-03 – Actualizar inventario
+CU-INV-01 – Actualizar inventario
 
 🔹 Diagramas de actividad y secuencia
 
