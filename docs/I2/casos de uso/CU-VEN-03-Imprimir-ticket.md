@@ -1,4 +1,4 @@
-# CU-VEN-03 – Imprimir ticket
+# CU-VEN-02 – Imprimir ticket
 
 **Actor principal:** Cajero  
 
