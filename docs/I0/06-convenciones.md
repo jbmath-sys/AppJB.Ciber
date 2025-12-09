@@ -32,10 +32,4 @@ Se realizó la veririfación de cada una de estas documentos o secciónes:
 
 ---
 
-## 5.4 Cierre de la Iteración 0
-
-Con la revisión completada, se concluye la **Iteración 0 – Incepción**, habiendo definido la visión, alcance, modelo de negocio y backlog inicial del sistema “Videojuegos El Profe 3.0”.  
-A partir de este punto, el proyecto está listo para avanzar hacia la **Iteración 1 (Análisis y Casos de Uso)**, donde se detallarán los flujos principales de interacción y se profundizará en el comportamiento del sistema.
-
----
 
